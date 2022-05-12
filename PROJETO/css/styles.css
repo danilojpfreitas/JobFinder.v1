@@ -564,7 +564,7 @@ footer .wrapper::after {
 
 }
 
-.footer-list li::after {
+.footer-list li:after {
     clear: both;
     content: "";
     display: block;
@@ -731,6 +731,197 @@ footer .wrapper::after {
     display: block;
 }
 
+/* job page */
+#job-header {
+    width: 100%;
+    background-color: #fafafa;
+    border-bottom: 1px solid #ccc;
+    margin-top: 100px;
+    padding: 2em 0;
+}
+
+#job-header h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+#job-header .company-box {
+    width: 100%;
+}
+
+#job-header #job-info {
+    height: 100px;
+    width: 100%;
+    margin-top: 3em;
+    text-align: center;
+}
+
+#job-header #job-info div {
+    width: 30%;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    position: relative;
+    padding-left: 3em;
+    padding-right: 3em;
+    box-sizing: border-box;
+    padding-top: 0;
+}
+
+#job-header #job-info .job_type {
+    padding-top: 5px;
+    margin-left: 5%;
+}
+
+#job-info .date i, #job-info .date p, #job-info .locality i, #job-info .locality p {
+    display: inline-block;
+    color: #666;
+    margin-top: 0.2em;
+}
+
+#job-info .date p {
+    margin-left: 10px;
+}
+
+#job-header #job-info div:nth-child(2) {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+#job-info .locality {
+    display: inline;
+    white-space: nowrap;
+}
+
+#about-company-container h2 {
+    margin: 1em;
+    font-size: 2em;
+    text-align: center;
+}
+
+#about-company-container img {
+    width: 70%;
+    margin-left: 2em;
+}
+
+
+#jobpage .wrapper {
+    padding: 2em 0;
+}
+
+#jobpage .wrapper:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+#job-container {
+    float: left;
+    width: 90%;
+    position: relative;
+}
+
+#jobpage .page-title {
+    font-size: 24px;
+    margin-bottom: 1.5em;
+    margin-left: 2em;
+}
+
+#jobpage .description {
+    margin-bottom: 1.5em;
+    margin-left: 3em;
+}
+
+#company-img {
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+/*
+#about-company-container p, #about-job-container, #min-requirements-container, #job-benefits-container{
+    margin-left: 2em;
+    margin-right: 8em;
+}
+*/
+
+#companyinfo-container {
+    float: right;
+    width: 25%;
+    padding-top: 4em;
+    padding-left: 1.5em;
+    box-sizing: border-box;
+}
+
+.jobpage-list {
+    color: #666;
+    margin-bottom: 1.5em;
+    font-size: 1em;
+    line-height: 2em;
+    margin-left: 2em;
+}
+
+#companyinfo-container img {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
+#companyinfo-container #job_type {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 2em 0;
+    border-bottom: 1px solid #ccc;
+}
+
+#companyinfo-container .job_type .clt {
+    margin-left: 2em;
+}
+
+#companyinfo-container #job-social-list {
+    list-style: none;
+}
+
+#companyinfo-container #job-social-list li {
+    margin-bottom: 1em;
+    list-style-image: url('../img/google-logo.jpg');
+}
+
+#companyinfo-container #job-social-list .fab{
+    color: #3381f3;
+}
+
+#companyinfo-container #job-social-list a {
+    text-decoration: none;
+    font-style: normal;
+}
+
+#apply-btn {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    margin-top: 4em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid #3381f3;
+    color: #3381f3;
+    border-radius: 5px;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    transition: .5s;
+    display: block;
+    margin-left: 2em;
+}
+
+#apply-btn:hover {
+    background-color: #3381f3;
+    color: #fff;
+}
+
+
 /* responsive */
 @media screen and (max-width: 1024px) {
 
@@ -795,11 +986,11 @@ footer .wrapper::after {
         font-size: 1em;
     }
 
-    .company-box .company-info p, .locality i, .locality p, .job-type span {
+    .company-box .company-info p, .locality i, .locality p, .job_type span {
         font-size: .75em;
     }
 
-    .job-type {
+    .job_type {
         right: 1em;
     }
 
@@ -928,7 +1119,7 @@ footer .wrapper::after {
         font-size: .8em;
     }
 
-    .job-type {
+    .job_type {
         width: 22%;
     }
 
